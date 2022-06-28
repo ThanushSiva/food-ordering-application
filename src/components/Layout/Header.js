@@ -5,6 +5,7 @@ import classes from './Header.module.css'
 import Meals from '../../assets/meals.jpg'
 
 const Header = props => {
+
     return (
         <React.Fragment>
             <header className={classes.header}>
@@ -12,7 +13,7 @@ const Header = props => {
                 <HeaderCartButton onClick={props.onShowCart}>Cart</HeaderCartButton>
             </header>
             <div className={classes['main-image']}>
-                <img src={Meals} alt="meals.jpg"/>
+                <img src={Meals} alt="meals.jpg" />
             </div>
         </React.Fragment>
     );
